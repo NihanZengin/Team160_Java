@@ -31,7 +31,5 @@ public class C06_Swap {
         //20
         //Sayi1'in yeni degeri : 20
         //Sayi2'in yeni degeri : 10
-
-        //Sayilar
     }
 }
