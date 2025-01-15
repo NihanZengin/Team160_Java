@@ -1,4 +1,4 @@
-package D03_dataCasting;
+package D03_DataCasting_WrapperClass;
 
 public class C01_DataCasting_AutoWidening {
     public static void main(String[] args) {
