@@ -72,10 +72,10 @@ public class C04_PreIncrement_PostIncrement {
 
         System.out.println(--b);//once b'nin degerini bir azaltti, sonra yazdirdi
 
-        System.out.println("75.satirda a : " + a + ", b : " + b); //
+        System.out.println("75.satirda a : " + a + ", b : " + b); //75.satirda a : 24, b : 36
 
 
-        System.out.println("78.satirda a : " + a + ", b : " + b); // 24 - 38
+
 
 
 
@@ -83,14 +83,14 @@ public class C04_PreIncrement_PostIncrement {
 
 
 
-        System.out.println("86.satirda a : " + a + ", b : " + b); // 38 - 39
+        System.out.println("86.satirda a : " + a + ", b : " + b); // 86.satirda a : 36, b : 37
 
 
 
         a= ++b;
 
 
-        System.out.println("93.satirda a : " + a + ", b : " + b); // 40 - 40
+        System.out.println("93.satirda a : " + a + ", b : " + b); // 93.satirda a : 38, b : 38
 
 
 
@@ -99,7 +99,7 @@ public class C04_PreIncrement_PostIncrement {
 
 
 
-        System.out.println("102.satirda a : " + a + ", b : " + b); // 41 - 20
+        System.out.println("102.satirda a : " + a + ", b : " + b); // 102.satirda a : 39, b : 19
 
 
 
@@ -107,9 +107,9 @@ public class C04_PreIncrement_PostIncrement {
 
 
 
-//        b = ++a / 2 ;
-//
-//        System.out.println("84.satirda a : " + a + ", b : " + b); //
+        b = ++a / 2 ;
+
+        System.out.println("84.satirda a : " + a + ", b : " + b); //
 
 
     }
