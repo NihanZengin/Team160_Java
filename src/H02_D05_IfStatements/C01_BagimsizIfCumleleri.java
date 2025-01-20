@@ -27,5 +27,13 @@ public class C01_BagimsizIfCumleleri {
         }
 
         //If cumlesindeki boolean sart onceden de tanimlanabilir.
+
+        boolean sonuc=a>b;
+        if (sonuc){
+            System.out.println("a b'den buyuk");
+        }
+
+        sonuc=a%5==0;
+
     }
 }
