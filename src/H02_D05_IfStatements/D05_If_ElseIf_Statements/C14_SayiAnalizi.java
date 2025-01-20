@@ -1,8 +1,8 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_If_ElseIf_Statements;
 
 import java.util.Scanner;
 
-public class C14_Soru {
+public class C14_SayiAnalizi {
     public static void main(String[] args) {
         // kullanicidan pozitif bir tamsayi isteyin
         // kullanici

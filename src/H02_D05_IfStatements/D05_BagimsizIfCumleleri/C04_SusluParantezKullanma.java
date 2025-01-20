@@ -1,8 +1,8 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_BagimsizIfCumleleri;
 
 import java.util.Scanner;
 
-public class C05_SusluParantezKullanma {
+public class C04_SusluParantezKullanma {
 
     public static void main(String[] args) {
 

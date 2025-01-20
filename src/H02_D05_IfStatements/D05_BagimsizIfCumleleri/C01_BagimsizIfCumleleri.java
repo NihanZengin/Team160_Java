@@ -1,4 +1,4 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_BagimsizIfCumleleri;
 
 public class C01_BagimsizIfCumleleri {
     public static void main(String[] args) {
@@ -33,7 +33,14 @@ public class C01_BagimsizIfCumleleri {
             System.out.println("a b'den buyuk");
         }
 
-        sonuc=a%5==0;
+        sonuc=a<100;
+        if (sonuc){
+            System.out.println("a 100'den kucuk");
+        }
+        sonuc=b>0;
+        if (sonuc){
+            System.out.println("b 0'dan buyuk");
+        }
 
     }
 }

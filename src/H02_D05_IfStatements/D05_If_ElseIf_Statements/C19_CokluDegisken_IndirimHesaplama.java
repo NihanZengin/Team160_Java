@@ -1,8 +1,8 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_If_ElseIf_Statements;
 
 import java.util.Scanner;
 
-public class C16_TopluIndirim {
+public class C19_CokluDegisken_IndirimHesaplama {
     public static void main(String[] args) {
 
         // Kullanicidan aldigi urun adedini ve indirimsiz fiyatini alin,

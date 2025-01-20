@@ -1,4 +1,4 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_If_ElseIf_Statements;
 
 import java.util.Scanner;
 
@@ -20,8 +20,9 @@ public class C15_vucutKitleEndeksi {
         int boy =scan.nextInt();
 
         double vke = (kilo*10000)/(boy*boy);
+        System.out.println("Vucut kitle endeksiniz: " + vke);
 
-        if(vke<30){
+        if(vke>30){
             System.out.println("Obez");
 
         }

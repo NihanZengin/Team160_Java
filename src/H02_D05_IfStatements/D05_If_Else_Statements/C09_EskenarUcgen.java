@@ -1,8 +1,8 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_If_Else_Statements;
 
 import java.util.Scanner;
 
-public class C09_IfElseStatements {
+public class C09_EskenarUcgen {
     public static void main(String[] args) {
 
         /*

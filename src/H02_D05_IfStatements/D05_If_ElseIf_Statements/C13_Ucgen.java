@@ -1,8 +1,8 @@
-package H02_D05_IfStatements;
+package H02_D05_IfStatements.D05_If_ElseIf_Statements;
 
 import java.util.Scanner;
 
-public class C13_if_ElseIfStatement {
+public class C13_Ucgen {
     public static void main(String[] args) {
         /*
         ikiden fazla ihtimalin bulundugu durumlarda;
@@ -26,7 +26,7 @@ public class C13_if_ElseIfStatement {
             System.out.println("Olcularini girdiginiz ucgen bir eskenar ucgendir...");
         }
         else if (kenar1==kenar2 || kenar1==kenar3 || kenar2==kenar3){
-            System.out.println("Olcularini girdiginiz ucgen bir esitkenar ucgendir...");
+            System.out.println("Olcularini girdiginiz ucgen bir eskenar ucgendir...");
         }
         else {
             System.out.println("Olcularini girdiginiz ucgen bir eskenar ucgen degildir...");
