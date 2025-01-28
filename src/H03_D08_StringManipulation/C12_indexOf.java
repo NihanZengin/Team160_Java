@@ -1,9 +1,8 @@
 package H03_D08_StringManipulation;
 
-public class C12_ {
+public class C12_indexOf {
     public static void main(String[] args) {
-        /// strinye MAIL=S  CAMER
-        ///
+
         String str = "Java zamanla guzellesir";
 
         System.out.println(str.contains("a")); //true
@@ -13,6 +12,7 @@ public class C12_ {
         //peki bu "a" nerde
 
         System.out.println(str.indexOf("a")); //1 buldugu ilk a'nin indezini getirir
+
         System.out.println(str.indexOf("v")); //2
 
         System.out.println(str.indexOf("aman")); // 6
@@ -20,6 +20,17 @@ public class C12_ {
         System.out.println(str.indexOf("la gu")); //10
 
         // istenirse belirlenen index'den sonra da arama yapilabilir
+
+        System.out.println(str.indexOf("a", 5)); // 6
+
+        System.out.println(str.indexOf("a", 6)); // 6
+
+        System.out.println(str.indexOf("a", 7)); // a
+
+
+        // olmayan bir metin sorulursa -1 sonucunu verir.
+
+        System.out.println(str.indexOf("x")); // -1
 
 
     }

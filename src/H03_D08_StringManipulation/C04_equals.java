@@ -1,6 +1,6 @@
 package H03_D08_StringManipulation;
 
-public class C04_ {
+public class C04_equals {
     public static void main(String[] args) {
 
         char chr1= 'a';
@@ -59,15 +59,16 @@ public class C04_ {
 
 
         System.out.println(str4 == str5); // Not == Not ==> true
-        System.out.println(str4 == str6); // Not == Not ==> false
+        System.out.println(str4 == str6); /** Not == Not ==> false  --> DIKKAT: burada kelimeler ayni oldugu halde false verdi.
+                                          Cunku == (double equal sign) hem METIN DEGERINE hem de REFERANSA bakar */
         System.out.println(str4 == str7); // Not == Not ==> true
         System.out.println(str4 == str8); // Not == Not ==> false
         System.out.println(str4 == str9); // Not == Not ==> false
-        System.out.println(str4 == "Not"); // Not == Not ==> true
+        System.out.println(str4 == "Not");// Not == Not ==> true
 
         System.out.println("_______________________________________________________________");
 
-        System.out.println(str4.equals(str5));
+        System.out.println(str4.equals(str5));      /*Goruldugu uzere ayni kelimeler burada hepsi true verdi*/
         System.out.println(str4.equals(str6));
         System.out.println(str4.equals(str7));
         System.out.println(str4.equals(str8));
@@ -78,6 +79,8 @@ public class C04_ {
 
         System.out.println("_______________________________________________________________");
 
+        // equals() sadece metne odaklanir, metin birebir ayni ise true verir
+        // karakter farkliligi, buyuk kucuk harf farkliligi  varsa false olur
         System.out.println(str4.equals("NOt"));
         System.out.println(str4.equals("NOT"));
         System.out.println(str4.equals("Not"));

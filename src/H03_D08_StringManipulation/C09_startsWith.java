@@ -1,6 +1,6 @@
 package H03_D08_StringManipulation;
 
-public class C09_ {
+public class C09_startsWith {
     public static void main(String[] args) {
 
         String str = "Java gun gectikce guzellesiyor";
@@ -19,7 +19,11 @@ public class C09_ {
          * */
 
         System.out.println(str.startsWith("gun" , 5));
-        // burada soru su: 5. index ve sonrasi "gun gectikce guzellesiyor" kismi "gin ile mi basliyor?" --> true
+        // burada soru su: 5. index ve sonrasi "gun gectikce guzellesiyor" kismi "gun ile mi basliyor?" --> true
+
+        System.out.println(str.startsWith(" ",8)); // " gectikce guzellesiyor" ==> true
+
+        System.out.println(str.startsWith("a", 10)); // "ectikce guzellesiyor" ==> false
 
 
 

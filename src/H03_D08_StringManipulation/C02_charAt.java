@@ -1,6 +1,6 @@
 package H03_D08_StringManipulation;
 
-public class C02 {
+public class C02_charAt {
     public static void main(String[] args) {
 
         String str = "Java Candir";

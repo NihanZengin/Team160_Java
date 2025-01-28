@@ -1,6 +1,6 @@
 package H03_D08_StringManipulation;
 
-public class C08_ {
+public class C08_contains {
 
 
     public static void main(String[] args) {
