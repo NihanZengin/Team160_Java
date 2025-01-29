@@ -1,6 +1,6 @@
 package H03_D08_StringManipulation;
 
-public class C07_substring {
+public class C07_substring_ikiParametre {
     public static void main(String[] args) {
 
        String str = "Java gercekten cok guzel";

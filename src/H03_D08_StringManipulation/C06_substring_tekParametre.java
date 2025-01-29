@@ -1,6 +1,6 @@
 package H03_D08_StringManipulation;
 
-public class C06_substring {
+public class C06_substring_tekParametre {
     public static void main(String[] args) {
 
         String str = "Java Candir";

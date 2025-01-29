@@ -6,7 +6,7 @@ public class C10_endsWith {
 
         String str="Java ogrenmek guzeldir";
 
-        System.out.println(str.endsWith("Java")); // son 4 harf equals "Java" ise true
+        System.out.println(str.endsWith("Java")); // son 4 harf equals "Java" mi? False
 
         System.out.println(str.endsWith("guzel")); // true
 
