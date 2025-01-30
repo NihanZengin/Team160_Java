@@ -34,6 +34,7 @@ public class C07_replaceAll {
 
         str = "alim merter SAHINGOZ";
         // str'i ilk harfi buyuk harf, kalan tum harfleri * olacak sekilde degistirin
+        //bosluk ve ozel karakterlere dokunmayin
 
 
         str = str.substring(0,1).toUpperCase() +

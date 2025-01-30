@@ -7,8 +7,8 @@ public class C03_isEmpty_isBlank {
         String s3 = "     ";
         String s4 = "Hello World";
 
-        System.out.println(s4.isEmpty()); // false
-        System.out.println(s4.isBlank()); // false
+        System.out.println(s4.isEmpty()); // false     length()==0
+        System.out.println(s4.isBlank()); // false      true if the string is empty or contains only white space
 
         System.out.println(s3.isEmpty()); // false
         System.out.println(s3.isBlank()); // true

@@ -3,9 +3,9 @@ package H03_D10_StringManipulation;
 public class C04_NullPointer {
     public static void main(String[] args) {
 
-        String isim1 = "";
+        String isim1 = ""; // hiclik degeri atanmis
         String isim2;
-        String isim3 = null;
+        String isim3 = null; // null olarak isaretlenmis
 
         // isim1' i yazdirin
         System.out.println(isim1); // bos bir satir yazdirir
@@ -21,18 +21,25 @@ public class C04_NullPointer {
                 isim 1'i bize getirmez, cunku onun bir degeri var
          */
 
+
+
+
         // isim2' i yazdirin
         // System.out.println(isim2);  // Variable 'isim2' might not have been initialized
         // isim2'ye deger atanmamis olabilir
 
+
         // isim2'in length'ini yazdirin
-        // System.out.println(isim2.length());
+        // System.out.println(isim2.length());  // atama yapilmadigindan kullanmamiza izin vermez
 
         /*
                 Bir method icerisinde(local) deger atamadan variable deklare edebiliriz,
                 AMMA deger atamadan kullanmak istersek
                 Java altini kirmizi cizer ve kullanmamiza izin vermez (Compile Time Error, CTE)
          */
+
+
+
 
         // isim3' i yazdirin
         System.out.println(isim3); // null

@@ -55,5 +55,6 @@ public class C01_lastIndexOf {
         // tut kelimesinin sondan ucuncu kullaniminin index'i nedir?
         System.out.println(str.lastIndexOf("tut", 13)); // 9
 
+
     }
 }

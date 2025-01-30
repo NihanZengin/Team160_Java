@@ -1,5 +1,7 @@
 package H03_D10_StringManipulation;
 
+import java.util.Scanner;
+
 public class C02_lastIndexOf_Soru {
     public static void main(String[] args) {
 
@@ -12,38 +14,22 @@ public class C02_lastIndexOf_Soru {
 
 
 
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Lutfen bir cumle giriniz..");
+        String cumle=scan.nextLine();
+        System.out.println("Lutfen cumlenizde aramak istediginiz bir metin giriniz..");
+        String metin=scan.nextLine();
+
+
+        if(cumle.contains(metin)) System.out.println("Cumle aranan metni icermiyor");
+        else if(cumle.indexOf(metin)==cumle.lastIndexOf(metin)) System.out.println("Cumlede aranan metin sadece bir adet var.");
+        else System.out.println("Cumlede aranan metin birden fazla var");
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Lutfen bir cumle giriniz...");
-//        String cumle = scanner.nextLine();
-//
-//        System.out.println("Lutfen cumlede aranacak metni girin...");
-//        String metin = scanner.nextLine();
-//
 //        int metinIlkIndex = cumle.indexOf(metin);
 //        int metinSonIndex = cumle.lastIndexOf(metin);
 //

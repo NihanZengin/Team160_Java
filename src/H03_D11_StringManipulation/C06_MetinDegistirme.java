@@ -1,5 +1,7 @@
 package H03_D11_StringManipulation;
 
+import java.util.Scanner;
+
 public class C06_MetinDegistirme {
     public static void main(String[] args) {
 
@@ -10,10 +12,33 @@ public class C06_MetinDegistirme {
         //       output : A** M*** C**
 
 
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Lutfen isminizi giriniz...");
-//        String isim = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Lutfen isminizi giriniz...");
+        String isim = scanner.nextLine();
+
+
+
+        int ilkBoslukIndex=isim.indexOf(" ");
+        int ikinciBoslukIndex=isim.indexOf(" ",ilkBoslukIndex+1);
+
+        System.out.println(
+                isim.substring(0, 1).toUpperCase() + isim.substring(1,ilkBoslukIndex).replaceAll("\\w","*")+
+
+                " "+isim.substring(ilkBoslukIndex + 1, ilkBoslukIndex + 2).toUpperCase() +
+                        isim.substring(ilkBoslukIndex+2,ikinciBoslukIndex).replaceAll("\\w","*")+
+
+
+                " "+isim.substring(ikinciBoslukIndex + 1, ikinciBoslukIndex + 2).toUpperCase()+
+                        isim.substring(ikinciBoslukIndex+2,isim.length()-1).replaceAll("\\w","*"));
+
+
+/** Yukaridaki cozum kullanicinin yalnizca uc isim girdigi halde calisiyor.
+ *  daha kapsamli bir cozum icin asagidaki ogretmenin cozumune bakiniz*/
+
+
+
+
 //
 //        int ilkSpaceIndex = isim.indexOf(" "); // space yoksa (tek isim) ==> -1
 //        // space varsa (birden fazla isim) != -1

@@ -10,10 +10,10 @@ public class C06_replaceFirst {
         // sadece ilk "a" harfini "A" ile degistirip yazdirin
         System.out.println(str.replaceFirst("a", "A")); // JAva ile yazilim dunyasina giris yap
 
+
         // sadece ilk 'e' harfini 'E' olarak degistirip yazdirin
         // str.replaceFirst('e','E')
-
-        /*
+        /**
             replaceFirst() char parametre kabul etmez
          */
 
