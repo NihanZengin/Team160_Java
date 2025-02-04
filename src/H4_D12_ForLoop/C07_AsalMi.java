@@ -2,7 +2,7 @@ package H4_D12_ForLoop;
 
 import java.util.Scanner;
 
-public class C07 {
+public class C07_AsalMi {
     public static void main(String[] args) {
 
         // Kullanicidan pozitif bir tamsayi isteyip,

@@ -2,7 +2,7 @@ package H4_D12_ForLoop;
 
 import java.util.Scanner;
 
-public class C03 {
+public class C03_sayilarinToplaminiYazdirma {
     public static void main(String[] args) {
 
         //Soru 3- Kullanicidan baslangic ve bitis degeri olarak pozitif sayilar alin,
@@ -12,24 +12,25 @@ public class C03 {
       Scanner scan= new Scanner(System.in);
         System.out.println("Lutfen baslangic degeri olarak pozitif bir tamsayi giriniz...");
         int baslangic=scan.nextInt();
-        System.out.println("Lutfen bitis degeri olarak pozotof bir tamsayi giriniz...");
+
+        System.out.println("Lutfen bitis degeri olarak pozitif bir tamsayi giriniz...");
         int bitis=scan.nextInt();
 
         int toplam=0;
 
-        for (int i = baslangic; i <= bitis; i++) {
+
 
             if(baslangic>bitis){
-                System.out.println("DIKKAT: bitis degeri baslangictan buyuk olmali!!");
-            } else if (i<0) {
-                System.out.println("Lutfen pozitif baslangic ve bitis degeri giriniz");
-
+                System.out.println("DIKKAT: bitis degeri baslangictan BUYUK olmali!!");
             }
             else {
-                toplam+=i;
-                System.out.println(toplam);
+                for (int i = baslangic; i <= bitis; i++) {
+                    toplam += i;
+
+                }
+                System.out.println("Verilen sayilarin toplami: "+toplam);
             }
 
-        }
+
     }
 }

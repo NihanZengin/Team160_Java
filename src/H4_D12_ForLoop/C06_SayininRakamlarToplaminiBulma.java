@@ -2,7 +2,7 @@ package H4_D12_ForLoop;
 
 import java.util.Scanner;
 
-public class C06 {
+public class C06_SayininRakamlarToplaminiBulma {
     public static void main(String[] args) {
 
         // Kullanicidan pozitif bir tamsayi alip, rakamlar toplamini asagidaki gibi yazdirin.
@@ -12,6 +12,7 @@ public class C06 {
         Scanner scan= new Scanner(System.in);
         System.out.println("Lutfen  pozitif bir tamsayi giriniz...");
         int girilenSayi=scan.nextInt();
+
         //sayi variable'i loop icinde 10'a bolunerek 0 oluncaya kadar islem devam ediyor
         //Kullanici'nin girdigi sayi degerini bu sekilde yok etmek mantikli degil.
         //Bu sebeple girilenSAyi'yi sayi variable'a atayarak, islemleri sayi variable'da yapalim.

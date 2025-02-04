@@ -2,10 +2,11 @@ package H4_D12_ForLoop;
 
 import java.util.Random;
 
-public class C08 {
+public class C08_AsalSayiUret {
     public static void main(String[] args) {
 
-        //1000'den kucuk rastgele bir asal sayi uretip yazdirmak istiyoruz. Bir asyi uretip asal olup olmadigini kontrol edin.
+        //1000'den kucuk rastgele bir asal sayi uretip yazdirmak istiyoruz.
+        // Bir asyi uretip asal olup olmadigini kontrol edin.
 
         //random bize rastgele sayi uretir ama asal olup olmadigini bilemeyiz
 

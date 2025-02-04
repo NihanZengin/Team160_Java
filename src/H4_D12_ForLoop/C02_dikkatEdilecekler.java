@@ -1,6 +1,6 @@
 package H4_D12_ForLoop;
 
-public class C02 {
+public class C02_dikkatEdilecekler {
     public static void main(String[] args) {
 
         for (int i = 10; i <5 ; i++) {   //konsolda hicbir sey yazmadi cunku
@@ -14,6 +14,11 @@ public class C02 {
 //            System.out.println(i+" ");
 //        }
 
+        //EGER i'nin hic bir degeri icin
+        // boolean sart false olmuyorsa
+        // loop teknik olarak sonsuza kadar calisir
+        // Bu duruma Sonsuz Loop denir
+        // ve bilgisayarin hafizasi dolup sistem kendini kapatana kadar calisir
 
 
     }

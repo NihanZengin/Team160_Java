@@ -15,10 +15,13 @@ public class C13_NestedForLoop {
     3 4 5 6 7
 
    3 adet satir, her satirda da 5 adet sayi var
+
+     eger bizden istenen yazdirma gorevinde
+    satir ve sutun varsa ic ice (nested) for loop kullanmaliyiz
   */
 
        Scanner scan= new Scanner(System.in);
-        System.out.println("Lutfen satir ve sutun sayisini giriniz");
+        System.out.println("Lutfen satir ve sutun sayisini, yani her satirdaki eleman sayisini giriniz");
 
 
         System.out.println("Satir sayisi: ");
@@ -27,9 +30,8 @@ public class C13_NestedForLoop {
         System.out.println("Sutun sayisi: ");
         int sutun=scan.nextInt();
 
-        for (int i = 1; i <=satir ; i++) {
-            for (int j = 1; j <=sutun ; j++) {
-                System.out.print(i+j-1+" ");
+        for (int i = 1; i <=satir ; i++) {               /// satirlar
+            for (int j = 1; j <=sutun ; j++) {           /// her satirdaki sutunlar
 
             }
             System.out.println("");
