@@ -1,4 +1,4 @@
-package H4_D12_ForLoop;
+package H04_D12_ForLoop;
 
 import java.util.Random;
 
