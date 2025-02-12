@@ -1,6 +1,6 @@
 package H05_D16_arrays;
 
-public class C06_devam {
+public class C06_Next {
     public static void main(String[] args) {
         //Verilen bir array'deki
         // pozitif tamsayilari toplayip sonucu
