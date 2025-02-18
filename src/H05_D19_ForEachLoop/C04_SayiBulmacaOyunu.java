@@ -43,10 +43,10 @@ public class C04_SayiBulmacaOyunu {
 
         for (int each:tahminler){
             int fark;
-            if (enYakinTahmin<rastgeleSayi){
-                fark=rastgeleSayi-enYakinTahmin;
+            if (each>rastgeleSayi){
+                fark=each-rastgeleSayi;
             }else {
-                fark=enYakinTahmin-rastgeleSayi;
+                fark=rastgeleSayi-each;
             }
             if(fark<tutulanSayiIleEnYakinSayininFarki){
                 enYakinTahmin=each;
@@ -55,6 +55,6 @@ public class C04_SayiBulmacaOyunu {
         }
 
 
-        System.out.println("Rastgele sayi: "+rastgeleSayi+"\nYapilan tahminler: "+tahminler+"En yakin tahmin: "+enYakinTahmin);
+        System.out.println("Rastgele sayi: "+rastgeleSayi+"\nYapilan tahminler: "+tahminler+"\nEn yakin tahmin: "+enYakinTahmin);
     }
 }
