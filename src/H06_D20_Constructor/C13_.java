@@ -1,6 +1,6 @@
-package H06_D20_;
+package H06_D20_Constructor;
 
-public class C05_ {
+public class C13_ {
     public static void main(String[] args) {
 
     }

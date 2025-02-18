@@ -1,4 +1,4 @@
-package H06_D20_;
+package H06_D20_Constructor;
 
 public class C08_StaticBlock {
 
