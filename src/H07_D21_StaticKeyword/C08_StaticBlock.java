@@ -1,4 +1,4 @@
-package H06_D20_Constructor;
+package H07_D21_StaticKeyword;
 
 public class C08_StaticBlock {
 

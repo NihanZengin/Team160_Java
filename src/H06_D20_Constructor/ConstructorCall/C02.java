@@ -2,71 +2,55 @@ package H06_D20_Constructor.ConstructorCall;
 
 public class C02 {
 
-    /*
-    Bir class'da signature'lari farkli olmak sartiyla birden fazla constructor olabilir
-
-    Ayni sekilde signature'lari farkli olmak sartiyla ayni isimde birden fazla method olabilir
-
-    Method isimleri icin genel kural : kucuk harfle baslar ve class ismi ile ayni olmaz
-    ancak class ismi ile ayni olsa da java CTE vermez
-     */
-
-    C02() {
+    String isim = "Ali";
+    int sayi = 40;
+    C02(){
         System.out.println("parametresiz constructor calisti");
-    }
+        C02(); // ==> parametresiz C02 method'una goturur
+    }//C1
 
-    C02(int a) {
+
+    C02(int sayi){
+        this();
         System.out.println("int parametreli constructor calisti");
-    }
+        this.sayi = sayi;
+    }//C2
 
-    C02(String b) {
+
+    C02(String isim){
         System.out.println("String parametreli constructor calisti");
-    }
-
-    C02(boolean bl) {
-        System.out.println("boolean parametreli constructor calisti");
-    }
-
-    void C02() {//Method name 'C02' is the same as its class name
-        System.out.println("parametresiz method calisti");
-        C02(3);
-    }
-
-    void C02(int sayi) {
-        System.out.println("int parametreli  method calisti");
-    }
-
-    void C02(String str) {
-        System.out.println("String parametreli method calisti");
-    }
+        this.C02();//bu yine methodu calistirir. Boyle yazsak da olur onu gostermek istedik
+        this.isim=isim; //iki isim karismamasi icin boyle yaziyorduk
+        sayi = 20; // bu constructor'da sayi variable tanimli olmadigi icin direk class leveldeki oldugunu anlar.
+                   // bu sebeple this yazmadik
+    }//C3
 
 
     public static void main(String[] args) {
-        C02 obj = new C02(); // parametresiz constructor calisti
-        // new gorunce direk constructer der
+        C02 obj3 = new C02("Leyla");
+        //String parametreli constructor calisti
+        //parametresiz method calisti
+        System.out.println(obj3.isim); // Leyla
+        System.out.println(obj3.sayi); // 20
 
-        obj.C02(); //parametresiz method calisti
-        // new kullanilmadiginda bunu direk method olarak algilar
+        C02 obj2 = new C02(3);
+        //parametresiz constructor calisti
+        //parametresiz method calisti
+        //int parametreli constructor calisti
+        System.out.println(obj2.isim); // Ali
+        System.out.println(obj2.sayi); // 3
+
+        C02 obj1 = new C02(); // parametresiz constructor calisir
+        //parametresiz constructor calisti
+        //parametresiz method calisti
     }
 
 
-    public void method1() {
-        System.out.println("method1 calisti"); // method1 calisti
-        new C02(3); // int parametreli constructor calisti
-
-        C02("Ali"); // String parametreli method calisti
-
-        // C02(true);  // direkt method call olarak algilar ve
-        // boolean parametreli method olmadigindan CTE verir
-
-        /*
-            Bir class icersisinde new C02();  kullanildiginda
-            Java bunun constructor olacagini bilir
+    void C02(){
+        System.out.println("parametresiz method calisti");
+    } // M1
 
 
-            new keyword olmadan C02();
-            method call olur
-         */
 
-    }
+
 }
