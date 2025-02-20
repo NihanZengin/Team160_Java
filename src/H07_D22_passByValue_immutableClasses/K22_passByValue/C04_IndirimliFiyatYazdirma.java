@@ -1,4 +1,4 @@
-package H07_D22_passByValue;
+package H07_D22_passByValue_immutableClasses.K22_passByValue;
 
 public class C04_IndirimliFiyatYazdirma {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package H07_D22_passByValue;
+package H07_D22_passByValue_immutableClasses.K22_passByValue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
