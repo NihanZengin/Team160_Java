@@ -14,4 +14,18 @@ public class C01_Hastane {
     String perAdres = "adres atanmamis";
     String perTel = "tel atanmamis";
 
+
+
+    @Override
+    public String toString() {
+        return "Instance ozellikler : " +
+                "perIsim='" + perIsim +
+                ", perAdres='" + perAdres +
+                ", perTel='" + perTel +
+                "\nStatic ozellikler : "+
+                "Hastane Isimi : " + hastaneIsmi +
+                ", hastaneAdresi : " + hastaneAdresi +
+                ", bashekim='" + bashekim ;
+
+    }
 }
