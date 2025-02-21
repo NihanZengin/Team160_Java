@@ -87,5 +87,6 @@ public class C04_LokalDateTime_DateTimeFormatter {
         DateTimeFormatter format8 = DateTimeFormatter.ofPattern("EEE MMM dd hh:mm a");
         System.out.println(ldt.format(format8)); // Fri Nov 01 09:23 AM
 
+
     }
 }
