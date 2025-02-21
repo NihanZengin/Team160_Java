@@ -55,7 +55,6 @@ public class C02_FarkliZamanOlusturma {
         LocalTime timeIstanbul = LocalTime.now(ZoneId.of("Europe/Istanbul"));
         System.out.println("Istanbul : " + timeIstanbul);
 
-
         // LocalTime.of() ile istediginiz degerlere sahip bir zaman variable'i olusturabilirsiniz
 
         LocalTime istenenZaman = LocalTime.of(10,5,23);

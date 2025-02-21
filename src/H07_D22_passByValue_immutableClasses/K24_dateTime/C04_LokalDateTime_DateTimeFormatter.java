@@ -47,31 +47,33 @@ public class C04_LokalDateTime_DateTimeFormatter {
          */
 
         System.out.println(ldt); // 2024-11-01 T 09:04:32.957330
+
+
         // 01.11.2024 Cuma
         DateTimeFormatter format1 = DateTimeFormatter.ofPattern("dd.MM.yyyy EEEE");
-        System.out.println(ldt.format(format1)); //  01.11.2024 Friday
+        System.out.println(ldt.format(format1)); //  21.02.2025 Freitag
 
 
         // 1/November/2024 297.gun
         DateTimeFormatter format2 = DateTimeFormatter.ofPattern("d/MMMM/yyyy DDD");
-        System.out.println(ldt.format(format2) + ".gun"); // 1/November/2024 306.gun
+        System.out.println(ldt.format(format2) + ".gun"); // 21/Februar/2025 052.gun
 
 
         // 1 Nov 24
         DateTimeFormatter format3 = DateTimeFormatter.ofPattern("d MMM yy");
-        System.out.println(ldt.format(format3)); // 1 Nov 24
+        System.out.println(ldt.format(format3)); // 21 Feb. 25
 
 
         // 10:19            24 saatlik dilime gore
         DateTimeFormatter format4 = DateTimeFormatter.ofPattern("HH:mm");
-        System.out.println(ldt.format(format4)); // 09:19
+        System.out.println(ldt.format(format4)); // 14:56
 
 
 
         // 10:19 am         12 saatlik dilime gore
 
         DateTimeFormatter format5 = DateTimeFormatter.ofPattern("hh:mm a");
-        System.out.println(ldt.format(format5)); // 09:20 AM
+        System.out.println(ldt.format(format5)); // 02:56 nachm.
 
 
         // 08:23:24         saat, dakika, saniye hepsi 2 basamakli ve 24 saate gore olsun
@@ -86,6 +88,7 @@ public class C04_LokalDateTime_DateTimeFormatter {
         // Wed Oct 23 3:20 PM
         DateTimeFormatter format8 = DateTimeFormatter.ofPattern("EEE MMM dd hh:mm a");
         System.out.println(ldt.format(format8)); // Fri Nov 01 09:23 AM
+                                                 //Fr. Feb. 21 02:56 nachm.
 
 
     }

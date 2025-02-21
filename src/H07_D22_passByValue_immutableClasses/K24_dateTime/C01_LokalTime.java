@@ -31,6 +31,15 @@ public class C01_LokalTime   {
 
         // Bir loop olusturup
         // Loop'un calismaya basladigi zaman ile bittigi zaman arasindaki farki bulun
+        /*
+        Bu soruyu cozmek icin for loop'un basinda ve sonunda  saat'i yazdirdigimda
+        (for dongusuyle aradan uzun zaman gecse dahi)
+         nano saniyasine kadar ayni degeri yazdiriyor.
+        Bunun sebebi 23. satirda saati aliyor ve hep ayni degeri kullaniyor.
+        Bu sebeple bu soruyu cozmek icin baslangic ve bitis degerlerini
+        ayri ayri alarak asagidaki gibi yapiyoruz
+
+         */
 
         LocalTime baslangic = LocalTime.now();
 
@@ -48,7 +57,7 @@ public class C01_LokalTime   {
         System.out.println("baslangic : "+baslangic);
         System.out.println("bitis : " + bitis);
 
-        /*
+        /**
             LocalTime class'i obje olusturdugumuz satir calistiginda
             calistigi sistemdeki zaman bilgisini alir
 
@@ -64,21 +73,28 @@ public class C01_LokalTime   {
         // 1- get method'lari ile zaman arasindaki farki bulabiliriz
 
         System.out.println(bitis.getSecond() - baslangic.getSecond());
+        //Sonuc cok saglikli degil cunku nanosaniye isin icinde
         // tam sureyi belirlemek icin
-        // saat, dakika, saniye ve nanosaniye degisimlerini dikkate alan, bir kod yazmalisiniz
+        // saat, dakika, saniye ve nanosaniye degisimlerini dikkate alan, bir kod yazmaliydik.
+        //Bunun yerine Java bize method olusturmus.
+        /// Duration.between():
 
 
         // 2- Duration.between() ile baslangic ve bitis degerlerini bulabiliriz
 
-
         System.out.println("Duration : "+ Duration.between(baslangic, bitis)); //
 
+
+
         // 3- toSecondOfDay() veya toNanoOfDay() ile aradaki farki bulabiliriz
+        //Gunun basindan suana kadarki saniyeyi -->toSecondOfDay()
+        //Gunun basindan su ana kadar nanosaniyeyi --> toNanoOfDay()
 
         System.out.println(baslangic.toSecondOfDay()); // 30834
         System.out.println(baslangic.toNanoOfDay()); //   30834744350000
 
         System.out.println(bitis.toNanoOfDay() - baslangic.toNanoOfDay());
+        //Bunlarin arasindaki farki yazdirarak  da bulabiliriz
 
 
 
@@ -89,18 +105,23 @@ public class C01_LokalTime   {
 
         System.out.println(saat.withHour(10)); // 10:37:10.215615
         System.out.println(saat.withSecond(0).withNano(0)); // 08:38
+        //saniye ve nona ile isimiz yok diyorsak boyle yapmak mantikli olur
+
+
 
 
         // .plus..() veya .minus..()  localTime degerindeki saat,dakika,saniye veya nanosaniyeyi
-        // istedgimiz deger kadar ileri veya geriye alir
+        // istedgimiz deger kadar ileri veya geriye alir.
 
         System.out.println(saat.plusHours(5).plusMinutes(12).plusSeconds(10));
 
         System.out.println(saat.minusHours(3).minusMinutes(5));
 
         System.out.println(saat.isBefore(baslangic)); // true
+        //Saat degeri baslangictan once mi?
 
         System.out.println(bitis.isAfter(baslangic)); // true
+        //bitis degeri baslangic degerinden sonra mi?
 
         System.out.println(saat.isAfter(bitis)); // false
 
