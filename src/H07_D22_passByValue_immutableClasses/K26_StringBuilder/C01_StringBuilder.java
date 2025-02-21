@@ -2,7 +2,13 @@ package H07_D22_passByValue_immutableClasses.K26_StringBuilder;
 
 public class C01_StringBuilder {
     public static void main(String[] args) {
-         /*
+         /**
+          * Java'da metin datalar kullanilabilecek 3 Class vardir.
+          * Bunlardan hangisinin kullanilacagina
+           ihtiyaclara gore development asamasinda karar verilir.
+          */
+
+        /*
 
         | class         | mutability | multi-thread                      | hiz           |
         |--------------|------------|---------------------------------   |--------------|
