@@ -25,21 +25,26 @@ public class C01_StringBuilder {
             StringBuilder 3 farkli sekilde olusturulabilir
          */
 
+        /// 1
         StringBuilder sb1 = new StringBuilder();
 
-        // Java 16 karakter alabilecek kapasitede ama BOS bir sb uretir
+        /// Java 16 karakter alabilecek kapasitede ama BOS bir sb uretir
 
         System.out.println("sb1 : "+ sb1); // Bos bir satir
         System.out.println("sb1'in uzunlugu  : "+ sb1.length() ); // 0
         System.out.println("sb1'in kapasitesi  : "+ sb1.capacity() ); // 16
 
         sb1.append("Java candir.");
+        //StringBuilder Mutable oldugundan Atama yapmamiza gerek olmadan degisiklikleri kaydeder.
 
         System.out.println("sb1 : "+ sb1); // Java candir.
         System.out.println("sb1'in uzunlugu  : "+ sb1.length() ); // 12
-        System.out.println("sb1'in kapasitesi  : "+ sb1.capacity() ); // 16
+        System.out.println("sb1'in kapasitesi  : "+ sb1.capacity() ); // 16 Kapasiteyi asmadigi muddetce kapasite hep aynidir
 
 
+
+
+        /// 2
         StringBuilder sb2 = new StringBuilder(7);
 
         // Java 7 karakter alabilecek kapasitede ama BOS bir sb uretir
@@ -51,23 +56,28 @@ public class C01_StringBuilder {
         sb2.append("Cem");
         System.out.println("sb2 : "+ sb2); // Cem
         System.out.println("sb2'in uzunlugu  : "+ sb2.length() ); // 3
-        System.out.println("sb2'in kapasitesi  : "+ sb2.capacity() ); // 7
+        System.out.println("sb2'in kapasitesi  : "+ sb2.capacity() ); // 7 Kapasite asilmadigi icin hala ayni
 
 
         sb2.append(" BAKIR");
         System.out.println("sb2 : "+ sb2); // Cem BAKIR
         System.out.println("sb2'in uzunlugu  : "+ sb2.length() ); // 9
         System.out.println("sb2'in kapasitesi  : "+ sb2.capacity() ); // 7 * 2 + 2 ==> 16
+        /// Kapasite asildiginda eski kapasitenin iki katindan iki fazlasi kapasiteye otomatik olarak cikar.
 
 
 
+
+        /// 3
         StringBuilder sb3 = new StringBuilder("Java");
 
+        /// Bu sekilde olusturdugumuzda olustururken icine koydugumuz karakter sayisini
+        ///bos kapasitenin(16) ustune ekleyerek kapasitesini belirler
         // Java 16+ 4(length) ==> 20 karakter kapasiteli, icinde "Java" bulunan bir sb olusturur
 
         System.out.println("sb3 : "+ sb3); // Java
         System.out.println("sb3'in uzunlugu  : "+ sb3.length() ); // 4
-        System.out.println("sb3'in kapasitesi  : "+ sb3.capacity() ); // 20
+        System.out.println("sb3'in kapasitesi  : "+ sb3.capacity() ); // 16 + 4 --> 20
 
 
         sb3.append(" ogrenen pisman olmaz.");
@@ -75,9 +85,10 @@ public class C01_StringBuilder {
         System.out.println("sb3 : "+ sb3); // Java ogrenen pisman olmaz
         System.out.println("sb3'in uzunlugu  : "+ sb3.length() ); // 26
         System.out.println("sb3'in kapasitesi  : "+ sb3.capacity() ); // 2 * 20 + 2 ==> 42
+        /// Kpasite(20) asildigi icin bunun iki katinin iki fazlasi yeni kapasite olarak belirlenir.
 
 
-        // Eger size ve length'i esitlemek isterseniz, trimToSize() kullanabilirsiniz.
+        /// Eger kapasiteyi length ile esitlemek isterseniz, trimToSize() kullanabilirsiniz.
 
         sb3.trimToSize();
 

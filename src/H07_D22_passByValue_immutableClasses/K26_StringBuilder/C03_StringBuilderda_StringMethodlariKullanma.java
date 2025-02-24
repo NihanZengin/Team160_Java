@@ -21,6 +21,7 @@ public class C03_StringBuilderda_StringMethodlariKullanma {
                     kalici degisiklik YAPMAZ
          */
 
+        /// substring bize String dondurdugu icin bu method kalici degisiklik yapmaz
         System.out.println(sb.substring(0, 4)); // Java
 
         System.out.println(sb); // Java candir

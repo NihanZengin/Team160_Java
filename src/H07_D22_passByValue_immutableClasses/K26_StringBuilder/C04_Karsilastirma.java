@@ -17,6 +17,7 @@ public class C04_Karsilastirma {
             Java bu karsilastirmaya itiraz etmez AMMA sonuc her zaman false'dur
          */
 
+
         // System.out.println( str == sb1);
         // Operator '==' cannot be applied to 'java.lang.String', 'java.lang.StringBuilder'
 
