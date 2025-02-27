@@ -1,6 +1,7 @@
 package H07_D23_OOP.K28_Encapsulation;
 
-public class C01_Data {
+public class C01_Datalar {
+
 
     private static int dataPrivS;
     private String dataPri;
@@ -13,5 +14,4 @@ public class C01_Data {
 
     public static byte dataPubS;
     public long dataPub;
-
 }
