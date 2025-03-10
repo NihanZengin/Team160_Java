@@ -1,4 +1,4 @@
-package H08_D24_exceptions.ExceptionNedir_TryCatch.MultpleCheckedExceptions;
+package H08_D24_exceptions.MultpleCheckedExceptions;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

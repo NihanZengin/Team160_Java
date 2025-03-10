@@ -1,4 +1,4 @@
-package H08_D24_exceptions.ExceptionNedir_TryCatch.MultpleUncheckedExceptions;
+package H08_D24_exceptions.MultpleUncheckedExceptions;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

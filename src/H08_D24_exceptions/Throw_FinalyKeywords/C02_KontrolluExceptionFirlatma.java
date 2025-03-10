@@ -1,4 +1,4 @@
-package H08_D24_exceptions.ExceptionNedir_TryCatch.Throw_FinalyKeywords;
+package H08_D24_exceptions.Throw_FinalyKeywords;
 
 import java.util.Scanner;
 

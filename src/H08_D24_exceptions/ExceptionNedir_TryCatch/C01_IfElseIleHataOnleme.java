@@ -1,4 +1,4 @@
-package H08_D24_exceptions.ExceptionNedir_TryCatch.ExceptionNedir_TryCatch;
+package H08_D24_exceptions.ExceptionNedir_TryCatch;
 
 import java.util.Scanner;
 
