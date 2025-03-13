@@ -1,8 +1,8 @@
-package H09_D25_Maps;
+package H09_D25_Maps.CanliDers;
 
 import java.util.Set;
 
-public class C03_SinifSubeListeleme extends OgrenciMapClass{
+public class C03_SinifSubeListeleme extends OgrenciMapClass {
 
     public static void main(String[] args) {
 

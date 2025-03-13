@@ -1,4 +1,4 @@
-package H09_D25_Maps;
+package H09_D25_Maps.CanliDers;
 
 public class C05_HazirlananMethodlariKullanma {
 
